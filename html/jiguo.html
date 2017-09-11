@@ -1,0 +1,1398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .outer{
+            width: 100%;
+            height: 100%;
+        }
+        .header {
+            width: 100%;
+        }
+        .header-top{
+            overflow: hidden;
+
+        }
+        .header-top-img{
+            height: 50px;
+            float: left;
+            margin-left: 15%;
+
+        }
+        .h-t-z{
+            font-size: 130%;
+            padding-top: 10px;
+            padding-left: 5%;
+            color: rgb(190,190,190);
+            float: left;
+        }
+        .h-t-zhu{
+            float: right;
+
+            margin-top: 13px;
+            margin-right: 10%;
+            color: red;
+            width: 35px;
+            height: 20px;
+            border: 1px solid red;
+        }
+        .header-top-img1{
+            float: right;
+            margin-top: 13px;
+            padding-right: 10px;
+            color: red;
+
+        }
+        .header-bottom{
+            height:260px;
+            width: 100%;
+            background-image: url("../../YIHE/resource/img1/1.png");
+        }
+        .h-b-b{
+            width:20%;
+            height: 180px;
+
+            float: right;
+            margin-right: 18%;
+            margin-top: 40px;
+        }
+        .h-b-b-1-3{
+            height: 36px;
+            width: 50%;
+            background: red;
+            border: 1px solid red;
+            background-position: center;
+            padding-top: 5px;
+        }
+        a:link{
+            color: red;
+            text-decoration: none;
+        }
+        /*点击后的样式*/
+        .h-t-zhu,a:visited{
+            color: red;
+        }
+        .h-b-b-1-3,a:visited{
+            color: white;
+        }
+        /*鼠标悬浮的样式*/
+        a:hover{
+            color: green;
+        }
+        /*鼠标下去没抬起来的样式*/
+        a:active{
+            color: yellow;
+        }
+        .outer{
+            overflow: auto;
+            position: relative;
+        }
+        .footer{
+            width: 100%;
+            overflow: hidden;
+            height: 400px;
+            position: relative;
+            background: rgb(80,80,80);
+        }
+        .footer-outer{
+            width: 1600px;
+            height: 80%;
+            position: relative;
+            margin: auto;
+            overflow: hidden;
+        }
+        .footer-block{
+            height: 100%;
+            float: left;
+            position: relative;
+            overflow: hidden;
+            margin: 20px;
+
+
+        }
+        .footer-art{
+            margin-bottom: 20px;
+            color: white;
+            font-size: 22px;
+            font-weight: 300;
+        }
+        .footer-text{
+            color: darkgrey;
+            margin-bottom: 5px;
+            font-size: 17px;
+        }
+        .center{
+            width: 100%;
+            overflow: hidden;
+            background: white;
+        }
+        .center-1-1{
+            width: 1360px;
+            height: 100px;
+
+            margin: auto;
+            position: relative;
+            box-sizing: border-box;
+            padding-top: 30px;
+
+
+        }
+        .read-more-logo{
+            width: 25px;
+            height: 25px;
+            position: absolute;
+            padding-top: 13px;
+            right: 0px;
+
+            margin: auto;
+        }
+        .center-try{
+            width: 1600px;
+
+            margin: auto;
+            position: relative;
+            overflow: hidden;
+        }
+        .center-3{
+            width: 100%;
+            overflow: hidden;
+            background: rgb(240,240,240);
+            margin-left: 100px;
+        }
+        .center-4-outer{
+            width: 100%;
+            overflow: hidden;
+            background: rgb(240,240,240);
+        }
+        .center-4-center{
+            width: 1600px;
+            height: 100px;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+
+        }
+        .center-4-text{
+            width: 210px;
+            height: 50px;
+            margin: 0 auto;
+
+            position: relative;
+            overflow: hidden;
+        }
+        .center-4-logo{
+            width: 30px;
+            height: 15px;
+            position: absolute;
+            left: 10px;
+            bottom: 15px;
+
+        }
+        .center-4-word{
+            width: 160px;
+            height: 30px;
+            position: absolute;
+            left: 50px;
+            bottom: 10px;
+
+            font-size: 25px;
+            font-weight: 300;
+            color: red;
+        }
+        .center-2{
+            width: 22%;
+            height: 470px;
+            float: left;
+            margin: auto;
+
+            position: relative;
+        }
+        .center-report-block{
+            width: 22%;
+            height: 400px;
+            float: left;
+            margin: auto;
+            position: relative;
+
+        }
+        .center-2-1{
+            border: 1px solid gainsboro;
+            width: 300px;
+            height: 430px;
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+        }
+        .report-item{
+            border: solid 1px gainsboro;
+            width: 300px;
+            height: 350px;
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+        }
+        .direction-item-page{
+            /*border: solid 1px gainsboro;*/
+            width: 300px;
+            height: 20px;
+            /*background: darkmagenta;*/
+            border-radius: 10px;
+            margin: auto;
+            position: relative;
+
+            padding-left: 11px;
+            box-sizing: border-box;
+        }
+        .footer-roc{
+            width: 120px;
+            height: 480px;
+            float: left;
+            position: relative;
+
+        }
+        .center-right{
+            width: 6%;
+            height: 470px;
+            float: left;
+            position: relative;
+
+        }
+        .roc-2{
+            width: 6%;
+            height: 400px;
+            float: left;
+            position: relative;
+        }
+        .item-review{
+
+            width: 100%;
+            height: 100%;
+
+            border-top-solid: 10px;
+            border-top-left-soild: 10px;
+            position: relative;
+        }
+        .report-img{
+            width: 300px;
+            height: 190px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            position: relative;
+        }
+        .item-info:hover{
+            background: rgba(200, 200, 200, 0.1);
+        }
+        .item-info{
+            width: 100%;
+            height: 242px;
+            position: absolute;
+            bottom: 0;
+            background: white;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .report-info:hover{
+            background: rgba(200, 200, 200, 0.1);
+        }
+        .report-info{
+            width: 100%;
+            height: 160px;
+            position: absolute;
+            bottom: 0;
+            background: white;
+            border: 1px solid white;
+
+        }
+        .item-info-name{
+            width: 260px;
+            height: 50px;
+            margin: 20px 20px 8px 20px;
+            font-size: 19px;
+            text-align: center;
+            font-weight: bolder;
+            position: relative;
+        }
+        .report-info-name{
+            width: 260px;
+            height: 50px;
+            margin: 20px 20px 8px 20px;
+            font-size: 17.5px;
+            color: rgb(175,175,175);
+            font-weight: 400;
+            position: relative;
+        }
+        .find-info-name:hover{
+            color: #9bacc6;
+        }
+        .find-info-name{
+            width: 260px;
+            height: 25px;
+            margin: 20px 20px 8px 20px;
+            font-size: 18px;
+            color: rgb(150,150,150);
+            font-weight: 400;
+            position: relative;
+        }
+        .find-info-text:hover{
+            color: #9bacc6;
+        }
+        .find-info-text{
+            width: 260px;
+            height: 17px;
+            margin: 0px 20px 8px 20px;
+            font-size: 16px;
+            color: rgb(190,190,190);
+            font-weight: 400;
+            position: relative;
+        }
+        .find-price{
+            width: 80px;
+            height: 30px;
+            position: absolute;
+            left: 15px;
+            bottom: 25px;
+            text-align: center;
+            color: red;
+            font-size: 20px;
+            font-weight: 300;
+        }
+        .report-text{
+            width: 80px;
+            height: 20px;
+            position: absolute;
+            right: 15px;
+            bottom: 25px;
+            overflow: hidden;
+        }
+        .report-text-square:hover{
+            color: #6d798c;
+        }
+        .report-text-square{
+            width: 20px;
+            height: 20px;
+            float: left;
+
+
+            text-align: center;
+            color: rgb(200,200,200);
+            position: relative;
+        }
+        .item-info-price{
+            width: 174px;
+            height: 35px;
+
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .block-1{
+
+            margin: 0px 10px;
+            border: solid 1px red;
+            height: 32px;
+            width: 65px;
+            border: 1px solid red;
+            float: left;
+
+            text-align: center;
+            padding-top: 5px;
+            box-sizing: border-box;
+            /*确定大小，不会随padding改变大小*/
+
+            font-size: 14px;
+            color: red;
+            font-weight: 300;
+
+        }
+
+        .item-info-num{
+            margin: 0 auto;
+
+            text-align: center;
+            padding-top: 15px;
+            font-size: 25px;
+            font-weight: 300;
+            position: relative;
+        }
+        .item-info-rest{
+            margin: 0 auto;
+
+            text-align: center;
+            padding-top: 10px;
+            font-size: 22px;
+            font-weight: 300;
+            position: relative;
+            color: orangered;
+        }
+        .item-info-rest-green:hover{
+            color: #22AC38;
+        }
+        .item-info-rest-green{
+            margin: 0 auto;
+            /*background: white;*/
+            text-align: center;
+            padding-top: 10px;
+            font-size: 22px;
+            font-weight: 300;
+            position: relative;
+            color: limegreen;
+        }
+
+        .item-yellowtag{
+            position: absolute;
+            top: 0;
+            right: 0;
+
+            width: 100px;
+            height: 27px;
+            border-bottom-left-radius: 10px;
+            border-top-right-radius: 10px;
+            background: lightyellow;
+
+            color: goldenrod;
+            text-align: center;
+            font-weight: 200;
+
+            box-sizing: border-box;
+            padding-top: 2px;
+        }
+        .div-redxin-r:hover{
+            display: inline;
+        }
+        .div-redxin-w:hover{
+            display: none;
+        }
+        .div-redxin-w {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+
+            display: inline;
+        }
+        .div-redxin-r{
+
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 20px;
+            width: 20px;
+
+            display: none;
+        }
+
+    </style>
+</head>
+
+<div class="outer">
+
+    <div class="header">
+        <div class="header-top">
+            <img src="../../YIHE/resource/img1/logonew.png" class="header-top-img">
+            <div class=" h-t-z">
+                <span>首页</span>
+                <span>酷玩</span>
+                <span>导购</span>
+                <span>使用</span>
+                <span>报告</span>
+            </div>
+            <div class="h-t-zhu">
+                <a >注册</a>
+            </div>
+            <div>
+                <img src="../../YIHE/resource/img1/search.png" class="header-top-img1">
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="h-b-b">
+                <div class="h-b-b-1" style="color: white">
+                    <div >
+                        <h2>音响小贝尔H2.1音响</h2>
+                    </div>
+                    <div>
+                        <div>
+                            <span>126人申请</span>
+                            <span>￥125</span>
+                            <span>20台</span>
+                        </div>
+                    </div>
+                    <div style="margin-top: 8px;margin-bottom: 8px">
+                        <span>申请时间剩余13天5小时37分</span>
+                    </div>
+                    <div class="h-b-b-1-3">
+                        <div style="padding-left: 20%;font-size: 130%">
+                            <a >立即申请</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center">
+        <div class="center-1">
+            <div class="center-1-1">
+                <h1 >热门试用</h1>
+            </div>
+            <div class="center-right">
+                <div style=" position: absolute; right: 0;top: 200px;">
+                </div>
+            </div>
+            <div class="center-2">
+                <div class="center-2-1">
+                    <div class="item-review" style="background: url('../../YIHE/resource/img1/hot9.jpg') no-repeat;">
+                        <div class="item-info">
+                            <div class="item-info-name">
+                                巴慕达 THE TOASTER 烤面包机
+                            </div>
+                            <div class="item-info-price">
+                                <div class="block-1">￥ 512</div>
+                                <div class="block-1">20 台</div>
+                            </div>
+                            <div class="item-info-num">
+                                <span style="color: orangered">1392</span><span>申请</span>
+                            </div>
+                            <div class="item-info-rest">
+                                剩余时间2天
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-2">
+                <div class="center-2-1">
+                    <div class="item-review" style="background: url('../../YIHE/resource/img1/hot10.jpg') no-repeat;">
+                        <div class="item-yellowtag">
+                            体验师专享
+                        </div>
+                        <div class="item-info">
+                            <div class="item-info-name">
+                                Osprey 小鹰户外运动专用腰包
+                            </div>
+                            <div class="item-info-price">
+                                <div class="block-1">￥ 512</div>
+                                <div class="block-1">20 台</div>
+                            </div>
+                            <div class="item-info-num">
+                                <span style="color: orangered">1392</span><span>申请</span>
+                            </div>
+                            <div class="item-info-rest-green">
+                                查看试用名单
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-2">
+                <div class="center-2-1">
+                    <div class="item-review" style="background: url('../../YIHE/resource/img1/hot11.jpg') no-repeat;">
+
+                        <div class="item-info">
+                            <div class="item-info-name">
+                                Liquid Image 338 运动摄像眼镜
+                            </div>
+                            <div class="item-info-price">
+                                <div class="block-1">￥ 512</div>
+                                <div class="block-1">20 台</div>
+                            </div>
+                            <div class="item-info-num">
+                                <span style="color: orangered">1392</span><span>申请</span>
+                            </div>
+                            <div class="item-info-rest">
+                                剩余时间2天
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="center-2">
+                <div class="center-2-1">
+                    <div class="item-review" style="background: url('../../YIHE/resource/img1/hot12.jpg') no-repeat;">
+                        <div class="item-info">
+                            <div class="item-info-name">
+                                巴慕达 THE TOASTER 烤面包机
+                            </div>
+                            <div class="item-info-price">
+                                <div class="block-1">￥ 512</div>
+                                <div class="block-1">20 台</div>
+                            </div>
+                            <div class="item-info-num">
+                                <span style="color: orangered">1392</span><span>申请</span>
+                            </div>
+                            <div class="item-info-rest">
+                                剩余时间2天
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="center-3">
+
+        </div>
+        <div class="center-5">
+            <div class="center-5-1">
+                <div class="center-1-1">
+                    <div class="title-text">
+                        <h1>导购精选</h1>
+                                    </div>
+                                    <div class="read-more-logo">
+                                        <img src="../../YIHE/resource/img1/readMore.png" style="width: 75%;height: 60%">
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/g1.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="report-info-name">花万元把蜗居秒变 "豪宅" ？ 这 12件家具就帮你办到</div>
+
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/zan.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="direction-item-page">
+                                        <img src="../../YIHE/resource/img1/listbg.jpg" style="width: 95%;height: 100%">
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/g2.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="report-info-name">到底有没有完美的 iphone 手机配件，答案都在这里</div>
+
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/zan.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="direction-item-page">
+                                        <img src="../../YIHE/resource/img1/listbg.jpg" style="width: 95%;height: 100%">
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/g3.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="report-info-name">2016 ，这8支钢笔够你装逼一整年</div>
+
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/zan.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="direction-item-page">
+                                        <img src="../../YIHE/resource/img1/listbg.jpg" style="width: 95%;height: 100%">
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/g4.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="report-info-name">他用12年找一把完美 剃须刀 ， 给你2万字终极购买指南</div>
+
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/zan.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="direction-item-page">
+                                        <img src="../../YIHE/resource/img1/listbg.jpg" style="width: 95%;height: 100%">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+        <div class="report-outer">
+                            <div class="center-try">
+                                <div class="center-1-1">
+                                    <div class="title-text">
+                                        <h1>发现酷玩</h1>
+                                    </div>
+                                    <div class="read-more-logo">
+                                        <img src="../../YIHE/resource/img1/readMore.png" style="width: 75%;height: 60%">
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k1.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">SCiO 微型光谱仪</div>
+                                            <div class="find-info-text">可以测定食物成分及营养</div>
+                                            <div class="find-price">
+                                                ￥ 1212
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k2.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">B&O BeoSound 35音响</div>
+                                            <div class="find-info-text">支持所有音乐流媒体服务</div>
+                                            <div class="find-price">
+                                                ￥ 512
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k3.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">Mozbii 触控吸色笔</div>
+                                            <div class="find-info-text">能吸取65000种颜色</div>
+                                            <div class="find-price">
+                                                ￥ 暂无
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k4.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">XPLORER 2 航拍飞行器</div>
+                                            <div class="find-info-text">搭载自动智障系统</div>
+                                            <div class="find-price">
+                                                ￥ 233
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                                <div class="roc-2"></div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k1.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">SCiO 微型光谱仪</div>
+                                            <div class="find-info-text">可以测定食物成分及营养</div>
+                                            <div class="find-price">
+                                                ￥ 1212
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k2.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">B&O BeoSound 35音响</div>
+                                            <div class="find-info-text">支持所有音乐流媒体服务</div>
+                                            <div class="find-price">
+                                                ￥ 512
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k3.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">Mozbii 触控吸色笔</div>
+                                            <div class="find-info-text">能吸取65000种颜色</div>
+                                            <div class="find-price">
+                                                ￥ 暂无
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k4.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">XPLORER 2 航拍飞行器</div>
+                                            <div class="find-info-text">搭载自动智障系统</div>
+                                            <div class="find-price">
+                                                ￥ 233
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                                <div class="roc-2"></div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k1.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">SCiO 微型光谱仪</div>
+                                            <div class="find-info-text">可以测定食物成分及营养</div>
+                                            <div class="find-price">
+                                                ￥ 1212
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k2.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">B&O BeoSound 35音响</div>
+                                            <div class="find-info-text">支持所有音乐流媒体服务</div>
+                                            <div class="find-price">
+                                                ￥ 512
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k3.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">Mozbii 触控吸色笔</div>
+                                            <div class="find-info-text">能吸取65000种颜色</div>
+                                            <div class="find-price">
+                                                ￥ 暂无
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k4.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">XPLORER 2 航拍飞行器</div>
+                                            <div class="find-info-text">搭载自动智障系统</div>
+                                            <div class="find-price">
+                                                ￥ 233
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                                <div class="roc-2"></div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k1.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">SCiO 微型光谱仪</div>
+                                            <div class="find-info-text">可以测定食物成分及营养</div>
+                                            <div class="find-price">
+                                                ￥ 1212
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k2.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">B&O BeoSound 35音响</div>
+                                            <div class="find-info-text">支持所有音乐流媒体服务</div>
+                                            <div class="find-price">
+                                                ￥ 512
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k3.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">Mozbii 触控吸色笔</div>
+                                            <div class="find-info-text">能吸取65000种颜色</div>
+                                            <div class="find-price">
+                                                ￥ 暂无
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="center-report-block">
+                                    <div class="report-item">
+                                        <div class="report-img">
+                                            <img  class="item-review" src="../../YIHE/resource/img1/k4.jpg">
+                                        </div>
+                                        <div class="report-info">
+                                            <div class="find-info-name">XPLORER 2 航拍飞行器</div>
+                                            <div class="find-info-text">搭载自动智障系统</div>
+                                            <div class="find-price">
+                                                ￥ 233
+                                            </div>
+                                            <div class="report-text">
+                                                <div class="report-text-square">
+                                                    <div class="div-redxin-w">
+                                                        <img src="../../YIHE/resource/img1/xinRedo.png" style="width: 80%;height: 80%">
+                                                    </div>
+
+                                                    <div class="div-redxin-r">
+                                                        <img src="../../YIHE/resource/img1/xinRedh.png" style="width: 80%;height: 80%">
+                                                    </div>
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                                <div class="report-text-square">
+                                                    <img src="../../YIHE/resource/img1/reply.png" style="width: 80%;height: 80%">
+                                                </div>
+                                                <div class="report-text-square">3</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="roc-2"></div>
+                            </div>
+
+                        </div>
+        <div class="center-4-outer">
+                            <div class="center-4-center">
+                                <div class="center-4-text">
+                                    <div class="center-4-logo">
+                                        <img src="../../YIHE/resource/img1/more.png" style="width: 100%;height: 100%">
+                                    </div>
+                                    <div class="center-4-word">
+                                        点击加载更多
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+    <div class="footer">
+                        <div class="footer-outer">
+                            <div class="footer-roc"></div>
+                            <div class="footer-block">
+                                <img src="../../YIHE/resource/img1/code.png" style="width: 200px;height: 200px">
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art">
+                                    <img src="../../YIHE/resource/img1/logoImg.jpg" style="width: 180px;height: 70px">
+                                </div>
+                                <div class="footer-text">
+                                    全新酷玩试用导购平台
+                                </div>
+                                <div class="footer-text">
+                                    酷·新奇·好玩·品质
+                                </div>
+                                <div class="footer-art">
+                                </div>
+                                <div class="footer-text">
+                                    微信添加"JguoJguo"
+                                </div>
+                                <div class="footer-text">
+                                    获取我们的服务
+                                </div>
+
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art">
+                                    免费试用
+                                </div>
+                                <div class="footer-text">
+                                    试用流程
+                                </div>
+                                <div class="footer-text">
+                                    如何提高成功率
+                                </div>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art">
+                                    友情链接
+                                </div>
+                                <div class="footer-text">
+                                    智东西
+                                </div>
+                                <div class="footer-text">
+                                    搜狐IT
+                                </div>
+                                <div class="footer-text">
+                                    搜狐数码
+                                </div>
+                                <div class="footer-text">
+                                    凤凰数码
+                                </div>
+                                <div class="footer-text">
+                                    泡泡网
+                                </div>
+                                <div class="footer-text">
+                                    ZUK社区
+                                </div>
+                                <div class="footer-text">
+                                    极客公园
+                                </div>
+                                <div class="footer-text">
+                                    果库
+                                </div>
+
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art"style="color: rgb(80,80,80)">
+                                    .
+                                </div>
+                                <div class="footer-art">
+
+                                </div>
+                                <div class="footer-text">
+                                    WEIBUSI
+                                </div>
+                                <div class="footer-text">
+                                    腾讯科技
+                                </div>
+                                <div class="footer-text">
+                                    PConline
+                                </div>
+                                <div class="footer-text">
+                                    3W咖啡
+                                </div>
+                                <div class="footer-text">
+                                    亿觅emie
+                                </div>
+                                <div class="footer-text">
+                                    易讯易起玩
+                                </div>
+                                <div class="footer-text">
+                                    极客公园
+                                </div>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art">
+                                    购买攻略
+                                </div>
+                                <div class="footer-text">
+                                    美亚海淘教程
+                                </div>
+                                <div class="footer-text">
+                                    日亚海淘教程
+                                </div>
+                                <div class="footer-text">
+                                    海淘转运攻略
+                                </div>
+                                <div class="footer-text">
+                                    kickstater众筹购买攻略
+                                </div>
+                                <div class="footer-text">
+                                    indiegogo众筹购买攻略
+                                </div>
+                            </div>
+                            <div class="footer-block">
+                                <div class="footer-art">
+                                    厂商合作
+                                </div>
+                                <div class="footer-text">
+                                    关于极果
+                                </div>
+                                <div class="footer-text">
+                                    联系我们
+                                </div>
+                                <div class="footer-text">
+                                    商务合作BD@jiguo.com
+                                </div>
+                                <div class="footer-text">
+                                    CEO邮箱CEO@jiguo.com
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+</div>
+
+</body>
+</html>
